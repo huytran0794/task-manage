@@ -1,0 +1,279 @@
+{
+  "admin": [
+    {
+      "id": 1,
+      "username": "admin01",
+      "password": "123456789",
+      "email": "example1@gmail.com",
+      "sdt": "0908876899"
+    },
+    {
+      "id": 2,
+      "username": "admin02",
+      "password": "123456789",
+      "email": "example2@gmail.com",
+      "sdt": "0908876899"
+    }
+  ],
+  "users": [
+    {
+      "id": 4,
+      "username": "NV Ngọc Vỹ",
+      "password": "123456789",
+      "email": "example4@gmail.com",
+      "sdt": "0908876899",
+      "tasks": [
+        {
+          "id": "zSemN",
+          "customer_id": 4,
+          "fullname": "Nguyễn Văn Sơn",
+          "email": "example8@gmail.com",
+          "sdt": "0908876899",
+          "map": "https://goo.gl/maps/aYMdGEJuRWivY1ph8",
+          "address": "180 Đ. Cao Lỗ, Phường 4, Quận 8, Thành phố Hồ Chí Minh",
+          "order": "1 bình gas cho bếp từ",
+          "note": "Nhanh lên, gấp lắm rồi",
+          "completed": false
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "username": "NV Thu Hương",
+      "password": "123456789",
+      "email": "example5@gmail.com",
+      "sdt": "0908876899",
+      "tasks": []
+    },
+    {
+      "id": 6,
+      "username": "NV Cẩm Vân",
+      "password": "123456789",
+      "email": "example9@gmail.com",
+      "sdt": "0908876899",
+      "tasks": []
+    },
+    {
+      "username": "NV Ngọc Như",
+      "password": "1234566789",
+      "email": "examplex@gmail.com",
+      "sdt": "09088757868",
+      "id": 8,
+      "tasks": [
+        {
+          "id": "mEYQK",
+          "customer_id": 4,
+          "fullname": "Nguyễn Văn Sơn",
+          "email": "example8@gmail.com",
+          "sdt": "0908876899",
+          "map": "https://goo.gl/maps/aYMdGEJuRWivY1ph8",
+          "address": "180 Đ. Cao Lỗ, Phường 4, Quận 8, Thành phố Hồ Chí Minh",
+          "order": "1 binh gas cho bep tu",
+          "note": "giao luc 8h",
+          "completed": false
+        }
+      ]
+    },
+    {
+      "username": "NV Hoàng Vũ",
+      "password": "1234566789",
+      "email": "example@gmail.com",
+      "sdt": "09088757868",
+      "id": 9,
+      "tasks": []
+    },
+    {
+      "username": "huy test user",
+      "password": "123456789",
+      "email": "huytran@gmail.com",
+      "sdt": "1",
+      "id": 10,
+      "tasks": []
+    }
+  ],
+  "customers": [
+    {
+      "id": 4,
+      "avatar": "https://i.insider.com/5dcc135ce94e86714253af21?width=1000&format=jpeg&auto=webp",
+      "fullname": "Nguyễn Văn Sơn",
+      "email": "example8@gmail.com",
+      "sdt": "0908876899",
+      "map": "https://goo.gl/maps/aYMdGEJuRWivY1ph8",
+      "address": "180 Đ. Cao Lỗ, Phường 4, Quận 8, Thành phố Hồ Chí Minh",
+      "order_history": []
+    },
+    {
+      "id": 5,
+      "avatar": "https://i.insider.com/5dcc135ce94e86714253af21?width=1000&format=jpeg&auto=webp",
+      "fullname": "Hà Anh Tuấn",
+      "email": "example8@gmail.com",
+      "sdt": "0908876899",
+      "map": "https://goo.gl/maps/aYMdGEJuRWivY1ph8",
+      "address": "180 Đ. Cao Lỗ, Phường 4, Quận 8, Thành phố Hồ Chí Minh",
+      "order_history": []
+    },
+    {
+      "id": 6,
+      "avatar": "https://i.insider.com/5dcc135ce94e86714253af21?width=1000&format=jpeg&auto=webp",
+      "fullname": "Vũ Văn Thảo",
+      "email": "example8@gmail.com",
+      "sdt": "0908876899",
+      "map": "https://goo.gl/maps/aYMdGEJuRWivY1ph8",
+      "address": "180 Đ. Cao Lỗ, Phường 4, Quận 8, Thành phố Hồ Chí Minh",
+      "order_history": []
+    },
+    {
+      "id": 7,
+      "avatar": "https://i.insider.com/5dcc135ce94e86714253af21?width=1000&format=jpeg&auto=webp",
+      "fullname": "Trần Thu Trang",
+      "email": "example8@gmail.com",
+      "sdt": "0908876899",
+      "map": "https://goo.gl/maps/aYMdGEJuRWivY1ph8",
+      "address": "180 Đ. Cao Lỗ, Phường 4, Quận 8, Thành phố Hồ Chí Minh",
+      "order_history": []
+    },
+    {
+      "id": 8,
+      "avatar": "https://i.insider.com/5dcc135ce94e86714253af21?width=1000&format=jpeg&auto=webp",
+      "fullname": "Nguyễn Vân Linh",
+      "email": "example8@gmail.com",
+      "sdt": "0908876899",
+      "map": "https://goo.gl/maps/aYMdGEJuRWivY1ph8",
+      "address": "180 Đ. Cao Lỗ, Phường 4, Quận 8, Thành phố Hồ Chí Minh",
+      "order_history": []
+    },
+    {
+      "id": 9,
+      "avatar": "https://i.insider.com/5dcc135ce94e86714253af21?width=1000&format=jpeg&auto=webp",
+      "fullname": "Đào Mạnh Cường",
+      "email": "example8@gmail.com",
+      "sdt": "0908876899",
+      "map": "https://goo.gl/maps/aYMdGEJuRWivY1ph8",
+      "address": "180 Đ. Cao Lỗ, Phường 4, Quận 8, Thành phố Hồ Chí Minh",
+      "order_history": []
+    },
+    {
+      "id": 10,
+      "avatar": "https://i.insider.com/5dcc135ce94e86714253af21?width=1000&format=jpeg&auto=webp",
+      "fullname": "Trần Thu Hà",
+      "email": "example8@gmail.com",
+      "sdt": "0908876899",
+      "map": "https://goo.gl/maps/aYMdGEJuRWivY1ph8",
+      "address": "180 Đ. Cao Lỗ, Phường 4, Quận 8, Thành phố Hồ Chí Minh",
+      "order_history": []
+    },
+    {
+      "id": 11,
+      "avatar": "https://i.insider.com/5dcc135ce94e86714253af21?width=1000&format=jpeg&auto=webp",
+      "fullname": "Vũ Lê Huy",
+      "email": "example8@gmail.com",
+      "sdt": "0908876891",
+      "map": "https://goo.gl/maps/aYMdGEJuRWivY1ph8",
+      "address": "180 Đ. Cao Lỗ, Phường 4, Quận 8, Thành phố Hồ Chí Minh",
+      "order_history": [
+        {
+          "order_id": "08m0eV",
+          "order": "1",
+          "note": "3",
+          "complete_date": "Dec 5, 2022, 03:07:43 AM"
+        },
+        {
+          "order_id": "1KVSXc",
+          "order": "1",
+          "note": "3",
+          "complete_date": "Dec 5, 2022, 03:35:21 AM"
+        },
+        {
+          "order_id": "xnX4vr",
+          "order": "1",
+          "note": "3",
+          "complete_date": "Dec 5, 2022, 03:35:53 AM"
+        },
+        {
+          "order_id": "nDDUwH",
+          "order": "5",
+          "note": "5",
+          "complete_date": "Dec 5, 2022, 03:48:17 AM"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "avatar": "https://i.insider.com/5dcc135ce94e86714253af21?width=1000&format=jpeg&auto=webp",
+      "fullname": "Trần Mạnh Cường",
+      "email": "example8@gmail.com",
+      "sdt": "0908876899",
+      "map": "https://goo.gl/maps/aYMdGEJuRWivY1ph8",
+      "address": "180 Đ. Cao Lỗ, Phường 4, Quận 8, Thành phố Hồ Chí Minh",
+      "order_history": []
+    },
+    {
+      "fullname": "Lê Thanh Hà",
+      "email": "example@gmail.com",
+      "sdt": "09088757868",
+      "address": "295 - Huynh Van Luy",
+      "passWord": "123456789",
+      "map": "https://goo.gl/maps/aYMdGEJuRWivY1ph8",
+      "id": 13,
+      "order_history": []
+    },
+    {
+      "fullname": "Vũ Thị Cẩm Tú",
+      "email": "example@gmail.com",
+      "sdt": "09088757868",
+      "address": "295 - Huynh Van Luy",
+      "passWord": "12356799766",
+      "map": "https://goo.gl/maps/aYMdGEJuRWivY1ph8",
+      "id": 14,
+      "order_history": []
+    },
+    {
+      "fullname": "Hà Gia Minh",
+      "email": "example@gmail.com",
+      "sdt": "09088757868",
+      "address": "295 - Huynh Van Luy",
+      "passWord": "12356799766",
+      "map": "https://goo.gl/maps/aYMdGEJuRWivY1ph8",
+      "id": 15,
+      "order_history": []
+    },
+    {
+      "fullname": "Lê Thanh Phong",
+      "email": "example@gmail.com",
+      "sdt": "09088757868",
+      "address": "295 - Huynh Van Luy",
+      "passWord": "12356799766",
+      "map": "https://goo.gl/maps/aYMdGEJuRWivY1ph8",
+      "id": 16,
+      "order_history": []
+    },
+    {
+      "fullname": "Lê Thanh Phong",
+      "email": "example@gmail.com",
+      "sdt": "0908814705",
+      "address": "295 - Huynh Van Luy",
+      "passWord": "12356799766",
+      "map": "https://goo.gl/maps/aYMdGEJuRWivY1ph8",
+      "id": 17,
+      "order_history": []
+    },
+    {
+      "fullname": "Trần mạnh Hùng",
+      "email": "example@gmail.com",
+      "sdt": "09088757868",
+      "address": "295 - Huynh Van Luy",
+      "map": "https://goo.gl/maps/saBZByLjP6VEKkhb8",
+      "id": 18,
+      "order_history": []
+    },
+    {
+      "fullname": "Trần quyểt tử",
+      "email": "examplex@gmail.com",
+      "sdt": "0908776512",
+      "address": "295 - Huynh Van Luy",
+      "map": "123123123aaa",
+      "order_history": [],
+      "id": 19
+    }
+  ]
+}
