@@ -48,7 +48,7 @@ const TaskDetailForm = ({
       complete_date: completeDateTime.toLocaleDateString("en-US", options),
     };
 
-    let newData = {
+    let newCustomerData = {
       ...customerInfo,
       order_history: [...customerInfo.order_history, newOrderHistory],
     };
@@ -59,7 +59,7 @@ const TaskDetailForm = ({
       userInfo.tasks[taskIdx] = { ...taskInfo };
       let newUserData = { ...userInfo };
       Promise.all([
-        CUSTOMER_SERVICE.updateCustomer(taskInfo.customer_id, newData),
+        CUSTOMER_SERVICE.updateCustomer(taskInfo.customer_id, newCustomerData),
         USER_SERVICE.updateUser(userInfo.id, newUserData),
       ])
         .then((res) => {
@@ -88,7 +88,6 @@ const TaskDetailForm = ({
         onFinish={handleFinish}
         className="user-task-detail-form"
         initialValues={initialValues}
-        disabled={true}
       >
         <Form.Item name="sdt" label={labelItem("Số điện thoại khách hàng")}>
           <Input placeholder="Số điện thoại khách hàng" />

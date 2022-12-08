@@ -16,6 +16,7 @@ import UserTaskPage from "./Pages/UserTaskAssignment/UserTaskPage";
 import UserTaskAssign from "./Pages/UserTaskAssignment/Admin/TaskAssignment/UserTaskAssign";
 import UserTaskTrackingPage from "./Pages/UserTaskAssignment/UserTaskTrackingPage";
 import UserTaskDetail from "./Pages/UserTaskAssignment/TaskDetail/UserTaskDetail";
+import OrderDetail from "./Pages/CustomerManagement/Detail/OrderDetail";
 
 function App() {
   return (
@@ -50,6 +51,11 @@ function App() {
             <Route path="customer/view/:id" element={<CustomerDetail />} />
             <Route path="customer/edit/:id" element={<EditCustomerPage />} />
             <Route path="customer/addcustomer" element={<AddCustomerPage />} />
+
+            <Route
+              path="customer/view/:customer_id/order-history/:id"
+              element={<OrderDetail order={1} />}
+            />
           </Route>
         </Route>
       </Routes>

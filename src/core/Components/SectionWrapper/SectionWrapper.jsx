@@ -10,12 +10,19 @@ const SectionWrapper = ({
   titleClass,
   content,
   contentClass,
+  sectionTitleClass,
 }) => {
   return (
-    <section className={clsx("py-10", sectionClass)}>
+    <section
+      className={clsx(
+        "py-10",
+        " overflow-auto max-h-[calc(100vh-90px-104px-10px)]",
+        sectionClass
+      )}
+    >
       <Container>
         {title && (
-          <div className={clsx("section-title", "mb-4")}>
+          <div className={clsx("section-title", "mb-4", sectionTitleClass)}>
             <h3
               className={clsx(
                 "title",

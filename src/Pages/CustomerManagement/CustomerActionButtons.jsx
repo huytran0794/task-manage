@@ -10,10 +10,12 @@ import { LOCAL_SERVICE } from "../../core/services/localServ";
 import { DesktopView, MobileView } from "../../core/HOC/Responsive";
 
 import { TfiMore } from "react-icons/tfi";
+import { useState } from "react";
 
 const CustomerActionButtons = ({ customerData }) => {
   const { confirm } = Modal;
   const navigate = useNavigate();
+  const [open, setOpen] = useState(false);
   const showDeleteConfirm = (
     title,
     content = "",
@@ -42,8 +44,11 @@ const CustomerActionButtons = ({ customerData }) => {
       wrapClassName: "modal-confirm-delete",
     });
   };
-
+  const handleOpenChange = (newOpen) => {
+    setOpen(newOpen);
+  };
   const handleDeleteCustomer = (customerData) => {
+    setOpen(false);
     showDeleteConfirm(
       `Are you sure you want to delete customer ${customerData.fullname} ?`,
       "",
@@ -141,7 +146,13 @@ const CustomerActionButtons = ({ customerData }) => {
       </Space>
     );
     return (
-      <Popover placement="bottomRight" content={popOverContent} trigger="click">
+      <Popover
+        placement="bottomRight"
+        content={popOverContent}
+        trigger="click"
+        open={open}
+        onOpenChange={handleOpenChange}
+      >
         <TfiMore size={20} />
       </Popover>
     );

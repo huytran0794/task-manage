@@ -29,7 +29,7 @@ const CUSTOMER_SERVICE = {
   addCustomer: async (newData) => {
     let { data } = await AXIOS_INSTANCE_GENERATOR(BASE_USER_URL).post(
       `/customers`,
-       newData
+      newData
     );
     return data;
   },

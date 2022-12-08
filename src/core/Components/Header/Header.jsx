@@ -27,6 +27,21 @@ function Header({ handleSearchInput }) {
     navigate("/login");
   };
 
+  let renderUserName = () => {
+    let name = "";
+    if (LOCAL_SERVICE.user.getRole() === "user") {
+      return (
+        <p className="username mb-0">{LOCAL_SERVICE.user.get().username}</p>
+      );
+    }
+
+    if (LOCAL_SERVICE.user.getRole() === "admin") {
+      return (
+        <p className="username mb-0">{LOCAL_SERVICE.user.get().fullname}</p>
+      );
+    }
+  };
+
   let userProfileActions = () => {
     return (
       <div className="profile-action min-w-[17px]">
@@ -39,7 +54,7 @@ function Header({ handleSearchInput }) {
                 className="bg-[#5C31D6]"
               />
             </div>
-            <p className="username mb-0">{LOCAL_SERVICE.user.get().username}</p>
+            {renderUserName()}
           </div>
         </div>
         <div

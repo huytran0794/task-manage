@@ -27,22 +27,22 @@ const UserTaskDetail = () => {
   }, []);
   const renderPage = (taskInfo) => {
     return (
-      <>
-        <Header />
-        <div className="col w-full">
-          <TaskDetailForm taskInfo={taskInfo} userInfo={userInfo} />
-        </div>
-      </>
+      <div className="col w-full">
+        <TaskDetailForm taskInfo={taskInfo} userInfo={userInfo} />
+      </div>
     );
   };
   if (Object.keys(taskInfo).length) {
     return (
-      <SectionWrapper
-        sectionClass={"user-task-detail"}
-        title={`Chi tiết công việc`}
-        content={renderPage(taskInfo)}
-        contentClass={"flex flex-col justify-between"}
-      />
+      <>
+        <Header />
+        <SectionWrapper
+          sectionClass={"user-task-detail"}
+          title={`Chi tiết công việc`}
+          content={renderPage(taskInfo)}
+          contentClass={"flex flex-col justify-between"}
+        />
+      </>
     );
   }
 };

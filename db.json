@@ -88,7 +88,20 @@
       "email": "huytran@gmail.com",
       "sdt": "1",
       "id": 10,
-      "tasks": []
+      "tasks": [
+        {
+          "id": "l0iy2",
+          "customer_id": 13,
+          "fullname": "Lê Thanh Hà",
+          "email": "example@gmail.com",
+          "sdt": "09088757868",
+          "map": "https://goo.gl/maps/aYMdGEJuRWivY1ph8",
+          "address": "295 - Huynh Van Luy",
+          "order": "Giao 4 bình gas",
+          "note": "Đi nhanh và có trước 2h chiều",
+          "completed": false
+        }
+      ]
     }
   ],
   "customers": [
@@ -179,7 +192,7 @@
         },
         {
           "order_id": "1KVSXc",
-          "order": "1",
+          "order": "Giao usb cho khách trần tiến huy",
           "note": "3",
           "complete_date": "Dec 5, 2022, 03:35:21 AM"
         },

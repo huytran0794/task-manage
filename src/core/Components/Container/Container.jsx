@@ -3,11 +3,8 @@ import React from "react";
 
 /* import local interface */
 
-
 const Container = ({ className, children }) => {
-  return (
-    <div className={clsx("container mx-auto", className)}>{children}</div>
-  );
+  return <div className={clsx("container", className)}>{children}</div>;
 };
 
 export default Container;
